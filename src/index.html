@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img Lazy Load</title>
+
+</head>
+
+<body>
+
+    <section class="section section-1"></section>
+    <section class="section section-2"></section>
+    <section class="section section-3">
+        <div class="image">
+            <picture class="lazy">
+                <source type="image/webp" srcset="./images/1x1.webp" data-srcset="./images/hero-bg.webp 1x, ./images/hero-bg@2x.webp 2x">
+                <img src="./images/1x1.png" data-src="./images/hero-bg.png" data-srcset="./images/hero-bg@2x.png" alt="">
+            </picture>
+        </div>
+    </section>
+
+</body>
+
+</html>
